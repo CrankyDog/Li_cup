@@ -1,0 +1,151 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=17;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=DEC;
+
+CONTENT BEGIN
+	0    :   31311;
+	1    :   -60520;
+	2    :   29964;
+	3    :   32768;
+	4    :   -60520;
+	5    :   28507;
+	6    :   31465;
+	7    :   -60741;
+	8    :   30033;
+	9    :   32768;
+	10   :   -60741;
+	11   :   28730;
+	12   :   31617;
+	13   :   -60951;
+	14   :   30094;
+	15   :   32768;
+	16   :   -60951;
+	17   :   28943;
+	18   :   31766;
+	19   :   -61151;
+	20   :   30147;
+	21   :   32768;
+	22   :   -61151;
+	23   :   29145;
+	24   :   31912;
+	25   :   -61341;
+	26   :   30193;
+	27   :   32768;
+	28   :   -61341;
+	29   :   29337;
+	30   :   32057;
+	31   :   -61521;
+	32   :   30230;
+	33   :   32768;
+	34   :   -61521;
+	35   :   29520;
+	36   :   32201;
+	37   :   -61692;
+	38   :   30260;
+	39   :   32768;
+	40   :   -61692;
+	41   :   29693;
+	42   :   32343;
+	43   :   -61854;
+	44   :   30282;
+	45   :   32768;
+	46   :   -61854;
+	47   :   29857;
+	48   :   32485;
+	49   :   -62008;
+	50   :   30296;
+	51   :   32768;
+	52   :   -62008;
+	53   :   30013;
+	54   :   32626;
+	55   :   -62154;
+	56   :   30303;
+	57   :   32768;
+	58   :   -62154;
+	59   :   30161;
+	60   :   32768;
+	61   :   -62293;
+	62   :   30301;
+	63   :   32768;
+	64   :   -62293;
+	65   :   30301;
+	66   :   32910;
+	67   :   -62424;
+	68   :   30292;
+	69   :   32768;
+	70   :   -62424;
+	71   :   30435;
+	72   :   33054;
+	73   :   -62549;
+	74   :   30275;
+	75   :   32768;
+	76   :   -62549;
+	77   :   30561;
+	78   :   33199;
+	79   :   -62667;
+	80   :   30250;
+	81   :   32768;
+	82   :   -62667;
+	83   :   30680;
+	84   :   33345;
+	85   :   -62779;
+	86   :   30216;
+	87   :   32768;
+	88   :   -62779;
+	89   :   30793;
+	90   :   33495;
+	91   :   -62885;
+	92   :   30174;
+	93   :   32768;
+	94   :   -62885;
+	95   :   30901;
+	96   :   33647;
+	97   :   -62985;
+	98   :   30124;
+	99   :   32768;
+	100  :   -62985;
+	101  :   31002;
+	102  :   33802;
+	103  :   -63080;
+	104  :   30065;
+	105  :   32768;
+	106  :   -63080;
+	107  :   31099;
+	108  :   33961;
+	109  :   -63170;
+	110  :   29997;
+	111  :   32768;
+	112  :   -63170;
+	113  :   31190;
+	114  :   34124;
+	115  :   -63256;
+	116  :   29920;
+	117  :   32768;
+	118  :   -63256;
+	119  :   31276;
+	120  :   34293;
+	121  :   -63336;
+	122  :   29833;
+	123  :   32768;
+	124  :   -63336;
+	125  :   31358;
+	[126..127]  :   0;
+END;

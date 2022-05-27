@@ -1,0 +1,27 @@
+set_global_assignment -entity "fir_all" -library "lib_fir_all" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "fir_all" -library "lib_fir_all" -name IP_TOOL_VERSION "17.1"
+set_global_assignment -entity "fir_all" -library "lib_fir_all" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "lib_fir_all" -name SPD_FILE [file join $::quartus(sip_path) "fir_all.spd"]
+
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/dspba_library_package.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/dspba_library.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_rtl_core_u0_m0_wo0_cm0_lutmem.hex"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_rtl_core_u0_m0_wo0_wi0_r0_ra0_count1_lut_lutmem.hex"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_rtl_core.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_ast.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_nativelink.tcl"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_msim.tcl"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_tb.vhd"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_mlab.m"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_model.m"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_coef_int.txt"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_input.txt"]
+set_global_assignment -library "lib_fir_all" -name MISC_FILE [file join $::quartus(sip_path) "fir_all_sim/fir_all_param.txt"]

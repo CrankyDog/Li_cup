@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun May 22 17:14:17 2022
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : au_filter
+Top-level Entity Name : au_filter
+Family : Cyclone IV E
+Total logic elements : 10,622
+    Total combinational functions : 6,348
+    Dedicated logic registers : 6,336
+Total registers : 6336
+Total pins : 36
+Total virtual pins : 0
+Total memory bits : 15,150
+Embedded Multiplier 9-bit elements : 46
+Total PLLs : 1

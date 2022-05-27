@@ -1,0 +1,88 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\qq\fpga_learning\li\fpga\au_filter\sim
+T_opt
+V[0UWD]gEZ1Y_c]<MldI6Z2
+04 6 4 work i2s_tb fast 0
+=1-10f48c0d3058-6243eebb-2a5-6f4c
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.1c;51
+vi2s
+ITaNaalHejf5gIPl6X5A2F2
+VL3GzNlIA;jJofjWSKdAUb2
+Z1 dD:\qq\fpga_learning\li\fpga\au_filter\sim
+w1648618429
+8D:/qq/fpga_learning/li/fpga/au_filter/rtl/i2s.v
+FD:/qq/fpga_learning/li/fpga/au_filter/rtl/i2s.v
+L0 10
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 Y^98U>PFfZ5J8c62kfmhH2
+!s85 0
+!s108 1648619194.153000
+!s107 D:/qq/fpga_learning/li/fpga/au_filter/rtl/i2s.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/qq/fpga_learning/li/fpga/au_filter/rtl|D:/qq/fpga_learning/li/fpga/au_filter/rtl/i2s.v|
+!s92 -vlog01compat -work work +incdir+D:/qq/fpga_learning/li/fpga/au_filter/rtl -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vi2s_tb
+ITC<Wk=DK<Bn3VdN0T[f922
+V;6:_62zR@^TR<nzC<mG^@3
+R1
+w1648619104
+8D:/qq/fpga_learning/li/fpga/au_filter/prj/../sim/i2s_tb.v
+FD:/qq/fpga_learning/li/fpga/au_filter/prj/../sim/i2s_tb.v
+L0 3
+R2
+r1
+31
+R3
+!i10b 1
+!s100 ?kZeDli5m[D4oCUXGZ9_d2
+!s85 0
+!s108 1648619194.689000
+!s107 D:/qq/fpga_learning/li/fpga/au_filter/prj/../sim/i2s_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/qq/fpga_learning/li/fpga/au_filter/prj/../sim|D:/qq/fpga_learning/li/fpga/au_filter/prj/../sim/i2s_tb.v|
+!s92 -vlog01compat -work work +incdir+D:/qq/fpga_learning/li/fpga/au_filter/prj/../sim -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vpll
+I`Y:F@D>]n?kR4kf;jlRch3
+VN^H26U0lQIUT>zS@A<Q310
+R1
+w1648613313
+8D:/qq/fpga_learning/li/fpga/au_filter/prj/ipcore/pll/pll.v
+FD:/qq/fpga_learning/li/fpga/au_filter/prj/ipcore/pll/pll.v
+L0 39
+R2
+r1
+31
+R3
+!i10b 1
+!s100 Ez5Azaba7OXn`]3FH:P@Q2
+!s85 0
+!s108 1648619194.293000
+!s107 D:/qq/fpga_learning/li/fpga/au_filter/prj/ipcore/pll/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/qq/fpga_learning/li/fpga/au_filter/prj/ipcore/pll|D:/qq/fpga_learning/li/fpga/au_filter/prj/ipcore/pll/pll.v|
+!s92 -vlog01compat -work work +incdir+D:/qq/fpga_learning/li/fpga/au_filter/prj/ipcore/pll -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vpll_altpll
+I43>WK9k@d6j1TTKB=fLCb2
+V<Ibm>]d3WNOG:[8GRoTm93
+R1
+w1648613536
+8D:/qq/fpga_learning/li/fpga/au_filter/prj/db/pll_altpll.v
+FD:/qq/fpga_learning/li/fpga/au_filter/prj/db/pll_altpll.v
+L0 29
+R2
+r1
+31
+R3
+!i10b 1
+!s100 2P<le3bK10X2LHgc0hiWd3
+!s85 0
+!s108 1648619194.482000
+!s107 D:/qq/fpga_learning/li/fpga/au_filter/prj/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/qq/fpga_learning/li/fpga/au_filter/prj/db|D:/qq/fpga_learning/li/fpga/au_filter/prj/db/pll_altpll.v|
+!s92 -vlog01compat -work work +incdir+D:/qq/fpga_learning/li/fpga/au_filter/prj/db -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
