@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for mlhdlc_lms_fcn</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2022-07-17 19:59:37</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>vsum>1<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function output = vsum(input)
+
+coder.inline('always');
+
+vt = input(1:2:end);
+    
+for i = int32(1:numel(input)/2)
+    k = int32(i*2);
+    vt(i) = vt(i) + input(k);
+end
+
+output = vt;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">20</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 5, 0)</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">double 1 x 40 </TD><TD class="right">-8061.068174860638</TD><TD class="right">8240.02934525015</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">int32</TD><TD class="right">2</TD><TD class="right">40</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 6, 0)</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">double 1 x 20 </TD><TD class="right">-8059.100340178202</TD><TD class="right">8211.443781459666</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">double 1 x 20 </TD><TD class="right">-8059.100340178202</TD><TD class="right">8211.443781459666</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum>2<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function output = vsum(input)
+
+coder.inline('always');
+
+vt = input(1:2:end);
+    
+for i = int32(1:numel(input)/2)
+    k = int32(i*2);
+    vt(i) = vt(i) + input(k);
+end
+
+output = vt;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">10</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">double 1 x 20 </TD><TD class="right">-8059.100340178202</TD><TD class="right">8211.443781459666</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">int32</TD><TD class="right">2</TD><TD class="right">20</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 5, 0)</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">double 1 x 10 </TD><TD class="right">-8067.132177700971</TD><TD class="right">8195.714812076581</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">double 1 x 10 </TD><TD class="right">-8067.132177700971</TD><TD class="right">8195.714812076581</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum>3<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function output = vsum(input)
+
+coder.inline('always');
+
+vt = input(1:2:end);
+    
+for i = int32(1:numel(input)/2)
+    k = int32(i*2);
+    vt(i) = vt(i) + input(k);
+end
+
+output = vt;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">5</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 3, 0)</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">double 1 x 10 </TD><TD class="right">-8067.132177700971</TD><TD class="right">8195.714812076581</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">int32</TD><TD class="right">2</TD><TD class="right">10</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 4, 0)</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">double 1 x 5 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">double 1 x 5 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>mtapped_delay_fcn<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function tap_delay = mtapped_delay_fcn(input)
+% The Tapped Delay function delays its input by the specified number 
+% of sample periods, and outputs all the delayed versions in a vector
+% form. The output includes current input
+
+% NOTE: To instruct MATLAB Coder to compile an external function, 
+% add the following compilation directive or pragma to the function code
+%#codegen
+
+persistent u_d;
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>if isempty(u_d)
+    u_d = zeros(1,40);
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+
+
+u_d = [u_d(2:40), input];
+
+tap_delay = u_d;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">input</TD><TD class="left">double</TD><TD class="right">-8019</TD><TD class="right">8377</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 15, 0)</TD></TR>
+<TR class="b">
+<TD class="left">tap_delay</TD><TD class="left">double 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 15, 0)</TD></TR>
+<TR class="a">
+<TD class="left">u_d</TD><TD class="left">double 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 15, 0)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum>4<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function output = vsum(input)
+
+coder.inline('always');
+
+vt = input(1:2:end);
+    
+for i = int32(1:numel(input)/2)
+    k = int32(i*2);
+    vt(i) = vt(i) + input(k);
+end
+
+output = vt;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">2</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 2, 0)</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">double 1 x 5 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">int32</TD><TD class="right">2</TD><TD class="right">4</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 3, 0)</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">double 1 x 3 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">double 1 x 3 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum>5<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function output = vsum(input)
+
+coder.inline('always');
+
+vt = input(1:2:end);
+    
+for i = int32(1:numel(input)/2)
+    k = int32(i*2);
+    vt(i) = vt(i) + input(k);
+end
+
+output = vt;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 1, 0)</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">double 1 x 3 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">int32</TD><TD class="right">2</TD><TD class="right">2</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 2, 0)</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">double 1 x 2 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">double 1 x 2 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum>6<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function output = vsum(input)
+
+coder.inline('always');
+
+vt = input(1:2:end);
+    
+for i = int32(1:numel(input)/2)
+    k = int32(i*2);
+    vt(i) = vt(i) + input(k);
+end
+
+output = vt;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 1, 0)</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">double 1 x 2 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">int32</TD><TD class="right">2</TD><TD class="right">2</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 2, 0)</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">double</TD><TD class="right">-7987.2914660969545</TD><TD class="right">8151.693856893174</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">double</TD><TD class="right">-7987.2914660969545</TD><TD class="right">8151.693856893174</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>mtreesum_fcn<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function y = mtreesum_fcn(u)
+%Implement the 'sum' function without a for-loop
+%  y = sum(u);
+
+%  The loop based implementation of 'sum' function is not ideal for 
+%  HDL generation and results in a longer critical path. 
+%  A tree is more efficient as it results in
+%  delay of log2(N) instead of a delay of N delay
+
+%  This implementation shows how to explicitly implement the vector sum in 
+%  a tree shape to enable hardware optimizations.
+
+%  The ideal way to code this generically for any length of 'u' is to use 
+%  recursion but it is not currently supported by MATLAB Coder
+
+
+% NOTE: To instruct MATLAB Coder to compile an external function, 
+% add the following compilation directive or pragma to the function code
+%#codegen
+
+% This implementation is hardwired for a 40tap filter.
+
+level1 = vsum(u);
+level2 = vsum(level1);
+level3 = vsum(level2);
+level4 = vsum(level3);
+level5 = vsum(level4);
+level6 = vsum(level5);
+y = level6;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">level1</TD><TD class="left">double 1 x 20 </TD><TD class="right">-8059.100340178202</TD><TD class="right">8211.443781459666</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="b">
+<TD class="left">level2</TD><TD class="left">double 1 x 10 </TD><TD class="right">-8067.132177700971</TD><TD class="right">8195.714812076581</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="a">
+<TD class="left">level3</TD><TD class="left">double 1 x 5 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="b">
+<TD class="left">level4</TD><TD class="left">double 1 x 3 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">level5</TD><TD class="left">double 1 x 2 </TD><TD class="right">-8054.107641668823</TD><TD class="right">8173.959537475922</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="b">
+<TD class="left">level6</TD><TD class="left">double</TD><TD class="right">-7987.2914660969545</TD><TD class="right">8151.693856893174</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">u</TD><TD class="left">double 1 x 40 </TD><TD class="right">-8061.068174860638</TD><TD class="right">8240.02934525015</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="b">
+<TD class="left">y</TD><TD class="left">double</TD><TD class="right">-7987.2914660969545</TD><TD class="right">8151.693856893174</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>update_weight_fcn<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function weights = update_weight_fcn(err_sig, ... 
+            delayed_signal, filter_coeff)
+% This function updates the adaptive filter weights based on LMS algorithm
+
+%   Copyright 2007-2015 The MathWorks, Inc.
+
+% NOTE: To instruct MATLAB Coder to compile an external function, 
+% add the following compilation directive or pragma to the function code
+%#codegen
+
+step_sig = 0.000000001 .* err_sig;
+correction_factor = delayed_signal .* step_sig;
+updated_weight = correction_factor + filter_coeff;
+
+  
+    weights = updated_weight;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">correction_factor</TD><TD class="left">double 1 x 40 </TD><TD class="right">-0.03439893388161061</TD><TD class="right">0.05162359698692546</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 19)</TD></TR>
+<TR class="b">
+<TD class="left">delayed_signal</TD><TD class="left">double 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 15, 0)</TD></TR>
+<TR class="a">
+<TD class="left">err_sig</TD><TD class="left">double</TD><TD class="right">-4747.591726033797</TD><TD class="right">7043.743619446781</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="b">
+<TD class="left">filter_coeff</TD><TD class="left">double 1 x 40 </TD><TD class="right">-0.10615188178105024</TD><TD class="right">1.0662708132123453</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 14)</TD></TR>
+<TR class="a">
+<TD class="left">step_sig</TD><TD class="left">double</TD><TD class="right">-4.747591726033797e-06</TD><TD class="right">7.043743619446781e-06</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 32)</TD></TR>
+<TR class="b">
+<TD class="left">updated_weight</TD><TD class="left">double 1 x 40 </TD><TD class="right">-0.10615188178105024</TD><TD class="right">1.0662708132123453</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 14)</TD></TR>
+<TR class="a">
+<TD class="left">weights</TD><TD class="left">double 1 x 40 </TD><TD class="right">-0.10615188178105024</TD><TD class="right">1.0662708132123453</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 14)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>mlhdlc_lms_fcn<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function [filtered_signal, y] = mlhdlc_lms_fcn(input, ...
+                                        desired)
+% 'input'  : The signal from Exterior Mic which records the ambient noise.
+% 'desired': The signal from Pilot's Mic which includes 
+%            original music signal and the noise signal
+% 'err_sig': The difference between the 'desired' and the filtered 'input'
+%           It represents the estimated music signal (output of this block)
+% 
+% The LMS filter is trying to retrieve the original music signal('err_sig') 
+% from Pilot's Mic by filtering the Exterior Mic's signal and using it to 
+% cancel the noise in Pilot's Mic. The coefficients/weights of the filter 
+% are updated(adapted) in real-time based on 'input' and 'err_sig'.
+
+% register filter coefficients
+persistent filter_coeff;
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>if isempty(filter_coeff)
+    filter_coeff = zeros(1, 40);
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+
+% Variable Filter: Call 'tapped_delay_fcn' function on path to create 
+% 40-step tapped delay
+delayed_signal = mtapped_delay_fcn(input);
+
+% Apply filter coefficients 
+weight_applied = delayed_signal .* filter_coeff;
+
+% Call treesum function on matlab path to sum up the results
+filtered_signal = mtreesum_fcn(weight_applied);
+
+% Output estimated Original Signal
+td = desired;
+tf = filtered_signal;
+esig = td - tf;
+y = esig;
+
+% Update Weights: Call 'update_weight_fcn' function on MATLAB path to 
+% calculate the new weights
+updated_weight = update_weight_fcn( esig, delayed_signal, ...
+                                   filter_coeff);
+
+% update filter coefficients register
+filter_coeff = updated_weight;
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 16)</th></TR><TR class="a">
+<TD class="left">delayed_signal</TD><TD class="left">double 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 15, 0)</TD></TR>
+<TR class="b">
+<TD class="left bold">desired*</TD><TD class="left">double</TD><TD class="right">-8149</TD><TD class="right">9510</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 16, 0)</TD></TR>
+<TR class="a">
+<TD class="left">esig</TD><TD class="left">double</TD><TD class="right">-4747.591726033797</TD><TD class="right">7043.743619446781</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="b">
+<TD class="left">filter_coeff</TD><TD class="left">double 1 x 40 </TD><TD class="right">-0.10615188178105024</TD><TD class="right">1.0662708132123453</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 14)</TD></TR>
+<TR class="a">
+<TD class="left bold">filtered_signal*</TD><TD class="left">double</TD><TD class="right">-7987.2914660969545</TD><TD class="right">8151.693856893174</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 0)</TD></TR>
+<TR class="b">
+<TD class="left bold">input*</TD><TD class="left">double</TD><TD class="right">-8019</TD><TD class="right">8377</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 16, 0)</TD></TR>
+<TR class="a">
+<TD class="left">td</TD><TD class="left">double</TD><TD class="right">-8149</TD><TD class="right">9510</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 15, 0)</TD></TR>
+<TR class="b">
+<TD class="left">tf</TD><TD class="left">double</TD><TD class="right">-7987.2914660969545</TD><TD class="right">8151.693856893174</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 2)</TD></TR>
+<TR class="a">
+<TD class="left">updated_weight</TD><TD class="left">double 1 x 40 </TD><TD class="right">-0.10615188178105024</TD><TD class="right">1.0662708132123453</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 14)</TD></TR>
+<TR class="b">
+<TD class="left">weight_applied</TD><TD class="left">double 1 x 40 </TD><TD class="right">-8061.068174860638</TD><TD class="right">8240.02934525015</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 1)</TD></TR>
+<TR class="a">
+<TD class="left bold">y*</TD><TD class="left">double</TD><TD class="right">-4747.591726033797</TD><TD class="right">7043.743619446781</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 0)</TD></TR>
+</TABLE>
+
+</body>
+</html>

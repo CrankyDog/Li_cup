@@ -1,0 +1,13 @@
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/dspba_library_package.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/dspba_library.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/auk_dspip_math_pkg_hpfir.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/auk_dspip_lib_pkg_hpfir.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/auk_dspip_avalon_streaming_source_hpfir.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/auk_dspip_roundsat_hpfir.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/altera_avalon_sc_fifo.v \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/fir_rtl_core.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/fir_ast.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/fir.vhd \
+  D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/fir_tb.vhd \

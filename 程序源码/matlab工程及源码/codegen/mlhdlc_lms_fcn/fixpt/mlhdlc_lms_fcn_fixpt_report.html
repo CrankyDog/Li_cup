@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for mlhdlc_lms_fcn_fixpt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+</style>
+</head>
+<body>
+<h3>Generated on  2022-07-17 20:00:47</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>vsum_s1<span></h2>
+<pre>function output = vsum_s1(input)
+
+fm = get_fimath();
+
+coder.inline('always');
+
+vt = fi(input(1:2:end), 1, 16, 1, fm);
+    
+for i = int32(1:numel(input)/2)
+    k = fi(int32(i*fi(2, 0, 2, 0, fm)), 0, 6, 0, fm);
+    vt(i) = vt(i) + input(k);
+end
+
+output = fi(vt, 1, 16, 1, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">20</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 1) 1 x 40 </TD><TD class="right">-8029</TD><TD class="right">8164</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">numerictype(0, 6, 0)</TD><TD class="right">2</TD><TD class="right">40</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">numerictype(1, 16, 1) 1 x 20 </TD><TD class="right">-8030</TD><TD class="right">8112</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">numerictype(1, 16, 1) 1 x 20 </TD><TD class="right">-8030</TD><TD class="right">8112</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum_s2<span></h2>
+<pre>function output = vsum_s2(input)
+
+fm = get_fimath();
+
+coder.inline('always');
+
+vt = fi(input(1:2:end), 1, 16, 1, fm);
+    
+for i = int32(1:numel(input)/2)
+    k = fi(int32(i*fi(2, 0, 2, 0, fm)), 0, 5, 0, fm);
+    vt(i) = vt(i) + input(k);
+end
+
+output = fi(vt, 1, 16, 1, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">10</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 1) 1 x 20 </TD><TD class="right">-8030</TD><TD class="right">8112</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">numerictype(0, 5, 0)</TD><TD class="right">2</TD><TD class="right">20</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">numerictype(1, 16, 1) 1 x 10 </TD><TD class="right">-8026</TD><TD class="right">8072.5</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">numerictype(1, 16, 1) 1 x 10 </TD><TD class="right">-8026</TD><TD class="right">8072.5</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum_s3<span></h2>
+<pre>function output = vsum_s3(input)
+
+fm = get_fimath();
+
+coder.inline('always');
+
+vt = fi(input(1:2:end), 1, 16, 2, fm);
+    
+for i = int32(1:numel(input)/2)
+    k = fi(int32(i*fi(2, 0, 2, 0, fm)), 0, 4, 0, fm);
+    vt(i) = vt(i) + input(k);
+end
+
+output = fi(vt, 1, 16, 2, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">5</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 1) 1 x 10 </TD><TD class="right">-8026</TD><TD class="right">8072.5</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">numerictype(0, 4, 0)</TD><TD class="right">2</TD><TD class="right">10</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">numerictype(1, 16, 2) 1 x 5 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">numerictype(1, 16, 2) 1 x 5 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum_s4<span></h2>
+<pre>function output = vsum_s4(input)
+
+fm = get_fimath();
+
+coder.inline('always');
+
+vt = fi(input(1:2:end), 1, 16, 2, fm);
+    
+for i = int32(1:numel(input)/2)
+    k = fi(int32(i*fi(2, 0, 2, 0, fm)), 0, 3, 0, fm);
+    vt(i) = vt(i) + input(k);
+end
+
+output = fi(vt, 1, 16, 2, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">2</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 2) 1 x 5 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">numerictype(0, 3, 0)</TD><TD class="right">2</TD><TD class="right">4</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">numerictype(1, 16, 2) 1 x 3 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">numerictype(1, 16, 2) 1 x 3 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum_s5<span></h2>
+<pre>function output = vsum_s5(input)
+
+fm = get_fimath();
+
+coder.inline('always');
+
+vt = fi(input(1:2:end), 1, 16, 2, fm);
+    
+for i = int32(1:numel(input)/2)
+    k = fi(int32(i*fi(2, 0, 2, 0, fm)), 0, 2, 0, fm);
+    vt(i) = vt(i) + input(k);
+end
+
+output = fi(vt, 1, 16, 2, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 2) 1 x 3 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">numerictype(0, 2, 0)</TD><TD class="right">2</TD><TD class="right">2</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">numerictype(1, 16, 2) 1 x 2 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">numerictype(1, 16, 2) 1 x 2 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>vsum_s6<span></h2>
+<pre>function output = vsum_s6(input)
+
+fm = get_fimath();
+
+coder.inline('always');
+
+vt = fi(input(1:2:end), 1, 16, 2, fm);
+    
+for i = int32(1:numel(input)/2)
+    k = fi(int32(i*fi(2, 0, 2, 0, fm)), 0, 2, 0, fm);
+    vt(i) = vt(i) + input(k);
+end
+
+output = fi(vt, 1, 16, 2, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">i</TD><TD class="left">int32</TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 2) 1 x 2 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">numerictype(0, 2, 0)</TD><TD class="right">2</TD><TD class="right">2</TD></TR>
+<TR class="b">
+<TD class="left">output</TD><TD class="left">numerictype(1, 16, 2)</TD><TD class="right">-8008.5</TD><TD class="right">7888</TD></TR>
+<TR class="a">
+<TD class="left">vt</TD><TD class="left">numerictype(1, 16, 2)</TD><TD class="right">-8008.5</TD><TD class="right">7888</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>mtreesum_fcn<span></h2>
+<pre>function y = mtreesum_fcn(u)
+%Implement the 'sum' function without a for-loop
+%  y = sum(u);
+
+%  The loop based implementation of 'sum' function is not ideal for 
+%  HDL generation and results in a longer critical path. 
+%  A tree is more efficient as it results in
+%  delay of log2(N) instead of a delay of N delay
+
+%  This implementation shows how to explicitly implement the vector sum in 
+%  a tree shape to enable hardware optimizations.
+
+%  The ideal way to code this generically for any length of 'u' is to use 
+%  recursion but it is not currently supported by MATLAB Coder
+
+
+% NOTE: To instruct MATLAB Coder to compile an external function, 
+% add the following compilation directive or pragma to the function code
+%#codegen
+
+% This implementation is hardwired for a 40tap filter.
+
+fm = get_fimath();
+
+level1 = fi(vsum_s1(u), 1, 16, 1, fm);
+level2 = fi(vsum_s2(level1), 1, 16, 1, fm);
+level3 = fi(vsum_s3(level2), 1, 16, 2, fm);
+level4 = fi(vsum_s4(level3), 1, 16, 2, fm);
+level5 = fi(vsum_s5(level4), 1, 16, 2, fm);
+level6 = fi(vsum_s6(level5), 1, 16, 2, fm);
+y = fi(level6, 1, 16, 2, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">level1</TD><TD class="left">numerictype(1, 16, 1) 1 x 20 </TD><TD class="right">-8030</TD><TD class="right">8112</TD></TR>
+<TR class="b">
+<TD class="left">level2</TD><TD class="left">numerictype(1, 16, 1) 1 x 10 </TD><TD class="right">-8026</TD><TD class="right">8072.5</TD></TR>
+<TR class="a">
+<TD class="left">level3</TD><TD class="left">numerictype(1, 16, 2) 1 x 5 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="b">
+<TD class="left">level4</TD><TD class="left">numerictype(1, 16, 2) 1 x 3 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="a">
+<TD class="left">level5</TD><TD class="left">numerictype(1, 16, 2) 1 x 2 </TD><TD class="right">-8019.5</TD><TD class="right">8019</TD></TR>
+<TR class="b">
+<TD class="left">level6</TD><TD class="left">numerictype(1, 16, 2)</TD><TD class="right">-8008.5</TD><TD class="right">7888</TD></TR>
+<TR class="a">
+<TD class="left">u</TD><TD class="left">numerictype(1, 16, 1) 1 x 40 </TD><TD class="right">-8029</TD><TD class="right">8164</TD></TR>
+<TR class="b">
+<TD class="left">y</TD><TD class="left">numerictype(1, 16, 2)</TD><TD class="right">-8008.5</TD><TD class="right">7888</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>update_weight_fcn<span></h2>
+<pre>function weights = update_weight_fcn(err_sig, ... 
+            delayed_signal, filter_coeff)
+% This function updates the adaptive filter weights based on LMS algorithm
+
+%   Copyright 2007-2015 The MathWorks, Inc.
+
+% NOTE: To instruct MATLAB Coder to compile an external function, 
+% add the following compilation directive or pragma to the function code
+%#codegen
+
+fm = get_fimath();
+
+step_sig = fi(fi(0.000000001, 0, 16, 45, fm) .* err_sig, 1, 16, 32, fm);
+correction_factor = fi(delayed_signal .* step_sig, 1, 16, 19, fm);
+updated_weight = fi(correction_factor + filter_coeff, 1, 16, 14, fm);
+
+  
+    weights = fi(updated_weight, 1, 16, 14, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">correction_factor</TD><TD class="left">numerictype(1, 16, 19) 1 x 40 </TD><TD class="right">-0.03432464599609375</TD><TD class="right">0.05165290832519531</TD></TR>
+<TR class="b">
+<TD class="left">delayed_signal</TD><TD class="left">numerictype(1, 15, 0) 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD></TR>
+<TR class="a">
+<TD class="left">err_sig</TD><TD class="left">numerictype(1, 16, 2)</TD><TD class="right">-4757</TD><TD class="right">7048</TD></TR>
+<TR class="b">
+<TD class="left">filter_coeff</TD><TD class="left">numerictype(1, 16, 14) 1 x 40 </TD><TD class="right">-0.11248779296875</TD><TD class="right">1.0570068359375</TD></TR>
+<TR class="a">
+<TD class="left">step_sig</TD><TD class="left">numerictype(1, 16, 32)</TD><TD class="right">-4.75696288049221e-06</TD><TD class="right">7.047783583402634e-06</TD></TR>
+<TR class="b">
+<TD class="left">updated_weight</TD><TD class="left">numerictype(1, 16, 14) 1 x 40 </TD><TD class="right">-0.11248779296875</TD><TD class="right">1.0570068359375</TD></TR>
+<TR class="a">
+<TD class="left">weights</TD><TD class="left">numerictype(1, 16, 14) 1 x 40 </TD><TD class="right">-0.11248779296875</TD><TD class="right">1.0570068359375</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>mtapped_delay_fcn<span></h2>
+<pre>function tap_delay = mtapped_delay_fcn(input)
+% The Tapped Delay function delays its input by the specified number 
+% of sample periods, and outputs all the delayed versions in a vector
+% form. The output includes current input
+
+% NOTE: To instruct MATLAB Coder to compile an external function, 
+% add the following compilation directive or pragma to the function code
+%#codegen
+
+fm = get_fimath();
+
+persistent u_d;
+if isempty(u_d)
+    u_d = fi(zeros(1,40), 1, 15, 0, fm);
+end
+
+
+u_d(:) = [fi(u_d(2:40), 1, 15, 0, fm), input];
+
+tap_delay = fi(u_d, 1, 15, 0, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 0)</TD><TD class="right">-8019</TD><TD class="right">8377</TD></TR>
+<TR class="b">
+<TD class="left">tap_delay</TD><TD class="left">numerictype(1, 15, 0) 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD></TR>
+<TR class="a">
+<TD class="left">u_d</TD><TD class="left">numerictype(1, 15, 0) 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>mlhdlc_lms_fcn_fixpt<span></h2>
+<pre>function [filtered_signal, y] = mlhdlc_lms_fcn_fixpt(input, ...
+                                        desired)
+% 'input'  : The signal from Exterior Mic which records the ambient noise.
+% 'desired': The signal from Pilot's Mic which includes 
+%            original music signal and the noise signal
+% 'err_sig': The difference between the 'desired' and the filtered 'input'
+%           It represents the estimated music signal (output of this block)
+% 
+% The LMS filter is trying to retrieve the original music signal('err_sig') 
+% from Pilot's Mic by filtering the Exterior Mic's signal and using it to 
+% cancel the noise in Pilot's Mic. The coefficients/weights of the filter 
+% are updated(adapted) in real-time based on 'input' and 'err_sig'.
+
+% register filter coefficients
+fm = get_fimath();
+
+persistent filter_coeff;
+if isempty(filter_coeff)
+    filter_coeff = fi(zeros(1, 40), 1, 16, 14, fm);
+end
+
+% Variable Filter: Call 'tapped_delay_fcn' function on path to create 
+% 40-step tapped delay
+delayed_signal = fi(mtapped_delay_fcn(input), 1, 15, 0, fm);
+
+% Apply filter coefficients 
+weight_applied = fi(delayed_signal .* filter_coeff, 1, 16, 1, fm);
+
+% Call treesum function on matlab path to sum up the results
+filtered_signal = fi(mtreesum_fcn(weight_applied), 1, 16, 0, fm);
+
+% Output estimated Original Signal
+td = fi(desired, 1, 15, 0, fm);
+tf = fi(filtered_signal, 1, 16, 2, fm);
+esig = fi(td - tf, 1, 16, 2, fm);
+y = fi(esig, 1, 16, 0, fm);
+
+% Update Weights: Call 'update_weight_fcn' function on MATLAB path to 
+% calculate the new weights
+updated_weight = fi(update_weight_fcn( esig, delayed_signal, ...
+                                   filter_coeff), 1, 16, 14, fm);
+
+% update filter coefficients register
+filter_coeff(:) = updated_weight;
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">delayed_signal</TD><TD class="left">numerictype(1, 15, 0) 1 x 40 </TD><TD class="right">-8019</TD><TD class="right">8377</TD></TR>
+<TR class="b">
+<TD class="left">desired</TD><TD class="left">numerictype(1, 16, 0)</TD><TD class="right">-8149</TD><TD class="right">9510</TD></TR>
+<TR class="a">
+<TD class="left">esig</TD><TD class="left">numerictype(1, 16, 2)</TD><TD class="right">-4757</TD><TD class="right">7048</TD></TR>
+<TR class="b">
+<TD class="left">filter_coeff</TD><TD class="left">numerictype(1, 16, 14) 1 x 40 </TD><TD class="right">-0.11248779296875</TD><TD class="right">1.0570068359375</TD></TR>
+<TR class="a">
+<TD class="left">filtered_signal</TD><TD class="left">numerictype(1, 16, 0)</TD><TD class="right">-8009</TD><TD class="right">7888</TD></TR>
+<TR class="b">
+<TD class="left">input</TD><TD class="left">numerictype(1, 16, 0)</TD><TD class="right">-8019</TD><TD class="right">8377</TD></TR>
+<TR class="a">
+<TD class="left">td</TD><TD class="left">numerictype(1, 15, 0)</TD><TD class="right">-8149</TD><TD class="right">9510</TD></TR>
+<TR class="b">
+<TD class="left">tf</TD><TD class="left">numerictype(1, 16, 2)</TD><TD class="right">-8009</TD><TD class="right">7888</TD></TR>
+<TR class="a">
+<TD class="left">updated_weight</TD><TD class="left">numerictype(1, 16, 14) 1 x 40 </TD><TD class="right">-0.11248779296875</TD><TD class="right">1.0570068359375</TD></TR>
+<TR class="b">
+<TD class="left">weight_applied</TD><TD class="left">numerictype(1, 16, 1) 1 x 40 </TD><TD class="right">-8029</TD><TD class="right">8164</TD></TR>
+<TR class="a">
+<TD class="left">y</TD><TD class="left">numerictype(1, 16, 0)</TD><TD class="right">-4757</TD><TD class="right">7048</TD></TR>
+</TABLE>
+
+</body>
+</html>

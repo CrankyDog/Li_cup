@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/simulation/modelsim
+vau_filter
+!s110 1653804221
+!i10b 1
+!s100 cTk2D2IG26ai_<zbBa8@42
+IdOF2bd=DTkmA3_eALBcme2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653804185
+8au_filter_8_1200mv_85c_slow.vo
+Fau_filter_8_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1653804220.000000
+!s107 au_filter_8_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|au_filter_8_1200mv_85c_slow.vo|
+!i113 1
+Z3 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z4 tCvgOpt 0
+viir_serial_tb
+!s110 1653804222
+!i10b 1
+!s100 4[<iW>CEIJXY:U0P17?2n1
+Ibj1RkRfZe1H[=lfZ@25PI3
+R1
+R0
+w1652951465
+8D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/../sim/iir_serial_tb.v
+FD:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/../sim/iir_serial_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1653804221.000000
+!s107 D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/../sim/iir_serial_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/../sim|D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/../sim/iir_serial_tb.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/../sim
+R4

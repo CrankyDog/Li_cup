@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/simulation/modelsim
+Pdspba_library_package
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+w1653047416
+R0
+8D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/dspba_library_package.vhd
+FD:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/dspba_library_package.vhd
+l0
+L17
+VKTlXWShT2<@=FUf9L`nD@1
+!s100 @e;XE0e^oAdIdzY=Rc];H3
+OV;C;10.5b;63
+32
+!s110 1653804056
+!i10b 1
+!s108 1653804056.000000
+!s90 -reportprogress|300|D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/dspba_library_package.vhd|
+!s107 D:/qq/fpga_learning/li/fpga/6.0++/au_filter/prj/ipcore/fir/fir_sim/dspba_library_package.vhd|
+!i113 1
+tExplicit 1 CvgOpt 0
